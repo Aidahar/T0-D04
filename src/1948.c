@@ -7,8 +7,11 @@ void print_number(int x);
 
 int main() {
     int a;
-    scanf("%d", &a);
-    print_number(a);
+    if (scanf("%d", &a) == 1) {
+      print_number(a);
+    } else {
+      printf("n/a");
+    }
     return 0;
 }
 
